@@ -66,11 +66,44 @@ def display_result():
     # build data frame that store result for image classification
     df_predictions = pd.DataFrame(columns=['Model', 'Predicted Flower Class', 'Probability'])
 
-    # TODO: Integrate other trained models
+    df_predictions = gabor_filter_cnn_classify(filename, df_predictions)
+    df_predictions = gaussian_filter_cnn_classify(filename, df_predictions)
+    df_predictions = sharpening_filter_cnn_classify(filename, df_predictions)
     df_predictions = aws_rekognition_classify(filename, df_predictions)
     
     return render_template('result.html', url=filename, predictions=df_predictions)
 
+
+def gabor_filter_cnn_classify(filename, df_predictions):
+
+
+
+    # save prediction to data frame
+    df_predictions = df_predictions.append({'Model': 'Gabor Filter CNN', \
+                                            'Predicted Flower Class': 'TO DO',\
+                                            'Probability': 'TO DO'}, ignore_index=True)
+    return df_predictions
+
+def gaussian_filter_cnn_classify(filename, df_predictions):
+
+
+
+    # save prediction to data frame
+    df_predictions = df_predictions.append({'Model': 'Gaussian Filter CNN', \
+                                            'Predicted Flower Class': 'TO DO',\
+                                            'Probability': 'TO DO'}, ignore_index=True)
+    return df_predictions
+
+
+def sharpening_filter_cnn_classify(filename, df_predictions):
+
+
+
+    # save prediction to data frame
+    df_predictions = df_predictions.append({'Model': 'Sharpening Filter CNN', \
+                                            'Predicted Flower Class': 'TO DO',\
+                                            'Probability': 'TO DO'}, ignore_index=True)
+    return df_predictions
 
 
 
