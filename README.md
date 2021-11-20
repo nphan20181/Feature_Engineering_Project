@@ -11,7 +11,5 @@
 ## Implementation
 
 - [Data Analysis](https://github.com/nphan20181/Feature_Engineering_Project/blob/main/data_analysis.ipynb)
-- Models
-  - [Gaussian-Convolutional Neural Networks](https://github.com/nphan20181/Feature_Engineering_Project/blob/main/FlowerDetection_GuassianFeatures.ipynb)
-  - [Gabor-Convolutional Neural Networks](https://github.com/nphan20181/Feature_Engineering_Project/blob/main/flower-classification_Gabor.ipynb)
-  - [AWS Rekognition API](https://github.com/nphan20181/Feature_Engineering_Project/blob/main/Invoke_AWS_Rekognition_API.ipynb)
+- [CNN Models] (https://github.com/nphan20181/Feature_Engineering_Project/blob/main/flower-recognition-merged-cnn.ipynb)
+- [AWS Rekognition API](https://github.com/nphan20181/Feature_Engineering_Project/blob/main/Invoke_AWS_Rekognition_API.ipynb)
